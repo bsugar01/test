@@ -29,7 +29,8 @@ A web-based Hospital Management System built using Node.js, Express, MySQL, and 
 5. **Configure Email Settings**
 
    _javascript_
-
+   
+    ```bash
    Set up your own email configuration for sending verification emails in the signup process. Modify the following code in your signup controller (signup_controller.js or similar)
    const transporter = nodemailer.createTransport({
    host: "smtp.ethereal.email",
@@ -39,6 +40,7 @@ A web-based Hospital Management System built using Node.js, Express, MySQL, and 
    pass: "your_password",
    },
    });
+   ```
 
 6. **Import the Database**
 
