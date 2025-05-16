@@ -16,25 +16,25 @@ var app = express();
 
 var bodyParser = require ('body-parser');
 
-var  login = require ('./controllers/login');
-var  home = require ('./controllers/home');
-var  signup = require ('./controllers/signup');
-var add_doc = require('./controllers/add_doctor');
-var  doc_controller = require ('./controllers/doc_controller');
-var db = require ('./models/db_controller');
-var reset = require('./controllers/reset_controller');
-var set = require('./controllers/set_controller');
+var  login = require ('./controllers/login.js');
+var  home = require ('./controllers/home.js');
+var  signup = require ('./controllers/signup.js');
+var add_doc = require('./controllers/add_doctor.js');
+var  doc_controller = require ('./controllers/doc_controller.js');
+var db = require ('./models/db_controller.js');
+var reset = require('./controllers/reset_controller.js');
+var set = require('./controllers/set_controller.js');
 var employee = require ('./controllers/employee.js');
-var logout = require ('./controllers/logout');
-var verify = require ('./controllers/verify');
-var store = require ('./controllers/store');
-var landing = require ('./controllers/landing');
-var complain = require ('./controllers/complain');
-var inbox = require ('./controllers/inbox');
-var appointment = require ('./controllers/appointment');
+var logout = require ('./controllers/logout.js');
+var verify = require ('./controllers/verify.js');
+var store = require ('./controllers/store.js');
+var landing = require ('./controllers/landing.js');
+var complain = require ('./controllers/complain.js');
+var inbox = require ('./controllers/inbox.js');
+var appointment = require ('./controllers/appointment.js');
 
-var receipt = require ('./controllers/receipt');
-var chat = require ('./controllers/chat');
+var receipt = require ('./controllers/receipt.js');
+var chat = require ('./controllers/chat.js');
 
 var app = express();
 
@@ -51,7 +51,7 @@ app.use(cookie());
 //app.use(expressValidator());
 
 
-var server =app.listen(3000 , function(){
+var server =app.listen(10613 , function(){
 
     console.log('server started');
 });
