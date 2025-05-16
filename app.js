@@ -41,7 +41,8 @@ var chat = require ('./controllers/chat.js');
 var app = express();
 
 
-app.set('view engine ', 'ejs');
+app.set('view engine', 'ejs');
+
 
 
 
