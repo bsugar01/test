@@ -579,3 +579,7 @@ module.exports.edit_leave = function (
     id;
   con.query(query, callback);
 };
+module.exports.getAllPatients = function (callback) {
+  var query = "SELECT * FROM patients"; 
+  con.query(query, callback);
+};

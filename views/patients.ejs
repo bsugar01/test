@@ -6,28 +6,27 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1 class="mb-4">Patients List</h1>
+    <h1 class="mb-4">Patient Details</h1>
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Patient Name</th>
-                <th>Department</th>
-                <th>Doctor</th>
-                <th>Date</th>
-                <th>Time</th>
+                <th>Patient ID</th>
+                <th>Name</th>
                 <th>Email</th>
+                <th>Gender</th>
+                <th>Age</th>
                 <th>Phone</th>
+                <!-- Add more fields based on your DB -->
             </tr>
         </thead>
         <tbody>
             <% patients.forEach(function(patient) { %>
                 <tr>
-                    <td><%= patient.patient_name %></td>
-                    <td><%= patient.department %></td>
-                    <td><%= patient.doctor_name %></td>
-                    <td><%= patient.date %></td>
-                    <td><%= patient.time %></td>
+                    <td><%= patient.id %></td>
+                    <td><%= patient.name %></td>
                     <td><%= patient.email %></td>
+                    <td><%= patient.gender %></td>
+                    <td><%= patient.age %></td>
                     <td><%= patient.phone %></td>
                 </tr>
             <% }) %>
