@@ -32,6 +32,8 @@ var landing = require ('./controllers/landing.js');
 var complain = require ('./controllers/complain.js');
 var inbox = require ('./controllers/inbox.js');
 var appointment = require ('./controllers/appointment.js');
+var patients = require('./controllers/patients');
+
 
 var receipt = require ('./controllers/receipt.js');
 var chat = require ('./controllers/chat.js');
@@ -71,5 +73,7 @@ app.use ('/complain',complain);
 app.use ('/inbox',inbox);
 app.use ('/appointment',appointment);
 app.use('/receipt',receipt);
+app.use('/patients', patients);
+
 
 // app.use('/doctors/add_doctor',add_doc);
